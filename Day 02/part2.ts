@@ -9,7 +9,6 @@ const parseColorAndCount = (colorAndCount: string): [number, string] => {
 }
 
 const processLine = (line: string): number => {
-    const gameID = line.split(' ')[1]; 
     const game = line.replaceAll(";", ",").split(':')[1].split(',').map(parseColorAndCount);
     // get the maximum of each color in the game
     const max = { red: 0, blue: 0, green: 0 };

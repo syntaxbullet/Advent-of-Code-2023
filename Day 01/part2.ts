@@ -38,8 +38,8 @@ const processLine = (line: string) => {
     const numbers = matches.map(match => match[1]);
     const first = numbers[0] as string;
     const last = numbers[numbers.length - 1] as string;
-    console.log('line:', line);
-    console.log('matches:', matches);
+    // console.log('line:', line);
+    // console.log('matches:', matches);
     return parseInt(first + last, 10);
 }
 
